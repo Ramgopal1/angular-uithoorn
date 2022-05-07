@@ -1,0 +1,8 @@
+<app-add-user (userAdded)="onUserAdded($event)"></app-add-user>
+
+<h3> 
+ Users List
+</h3>
+<div class="md-3">
+    <app-user *ngFor="let user of usersList" [user]="user"></app-user>
+</div>
