@@ -8,6 +8,7 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { HelloComponent } from './hello.component';
+import { AppRendererDirective } from './Directive/appRendererDirective';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HelloComponent } from './hello.component';
     UsersComponent,
     UserComponent,
     AddUserComponent,
+    AppRendererDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
