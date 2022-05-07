@@ -4,4 +4,15 @@
 <div class="md-3">
   <app-user *ngFor="let user of usersList" [user]="user"></app-user>
 </div>
-<div appRendererDirective>I am Blue background</div>
+<!-- <div appRendererDirective>I am Blue background</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">update User</div>
+    <div class="col-md-12">
+      <button class="btn btn-primary" (click)="updateName()">
+        Update Name
+      </button>
+      <div class="">{{ updatedName }}</div>
+    </div>
+  </div>
+</div>
