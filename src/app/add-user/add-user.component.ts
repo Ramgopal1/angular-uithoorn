@@ -21,7 +21,7 @@ export class AddUserComponent implements OnInit {
 
   @ViewChild('userInput') userInput: ElementRef;
   onUserAdded() {
-    // this.userAdded.emit(this.userInput);
-    console.log(this.userInput);
+    this.userAdded.emit(this.userInput.nativeElement.value);
+    // console.log(this.userInput.nativeElement.value);
   }
 }
