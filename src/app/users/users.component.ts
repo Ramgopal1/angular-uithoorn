@@ -16,6 +16,8 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {}
   onUserAdded(event: string) {
     this.usersList.push(event);
+    var lastElement = this.usersList.slice(-1);
+    this.logData.logger('user is added:' + this.usersList.slice(-1));
   }
   updateName() {
     this.updatedName = 'My updated name is Rajesh';
