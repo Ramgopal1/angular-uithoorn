@@ -1,9 +1,11 @@
-import { OnInit } from '@angular/core';
-
-export class LoggingService implements OnInit {
-  constructor() {}
-  ngOnInit() {}
-  logger(status: string) {
-    console.log(status);
+export class LoggingService {
+  logger(msg: any) {
+    console.log(msg);
+  }
+  error(msg: any) {
+    console.error(msg);
+  }
+  warn(msg: any) {
+    console.warn(msg);
   }
 }
