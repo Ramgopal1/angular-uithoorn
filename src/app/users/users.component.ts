@@ -7,7 +7,7 @@ import { LoggingService } from '../service/Logging.service';
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css'],
-  providers: [LoggingService],
+  // providers: [LoggingService],
 })
 export class UsersComponent implements OnInit {
   constructor(private logData: LoggingService) {}
