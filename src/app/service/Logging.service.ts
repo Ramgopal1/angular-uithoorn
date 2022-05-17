@@ -8,4 +8,7 @@ export class LoggingService {
   warn(msg: any) {
     console.warn(msg);
   }
+  validation(msg: any) {
+    console.log('check value of field');
+  }
 }
